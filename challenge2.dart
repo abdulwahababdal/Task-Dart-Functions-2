@@ -56,6 +56,6 @@ int squareOrDouble(int n) {
   if (n%2==1){
     return n*2;
   } else {
-    return squareOrDouble(n);
+    return n*n;
   }
 }
