@@ -1,3 +1,5 @@
+import 'dart:math';
+
 /**
  * greet(name):
  * - receives a name,
@@ -7,7 +9,7 @@
  * greet("Hamza") => prints "Hello Hamza"
  */
 void greet(String name) {
-  // Your code here
+  print("Hello $name");
 }
 
 /**
@@ -20,7 +22,11 @@ void greet(String name) {
  * isOdd(10) -> false
  */
 bool isOdd(int n) {
-  // Your code here
+  if (n%2==1){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**
@@ -33,7 +39,7 @@ bool isOdd(int n) {
  * oddsSmallerThan(15) -> 7
  */
 int oddsSmallerThan(int n) {
-  // Your code here
+  return(n ~/ 2);
 }
 
 /**
@@ -47,5 +53,9 @@ int oddsSmallerThan(int n) {
  * squareOrDouble(9) -> 81
  */
 int squareOrDouble(int n) {
-  // Your code here
+  if (n%2==1){
+    return n*2;
+  } else {
+    return squareOrDouble(n);
+  }
 }
